@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jr.roteiro02.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        android:src="@drawable/head"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:hint="Azul, Amarelo ou Vermelho" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traduzir"
+        android:id="@+id/traduzir"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:onClick="tradutorGeral"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inglês"
+        android:id="@+id/ingles"
+        android:layout_below="@+id/traduzir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp"
+        android:onClick="traduzirIngles"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Francês"
+        android:id="@+id/frances"
+        android:layout_alignTop="@+id/ingles"
+        android:layout_alignRight="@+id/texto"
+        android:layout_alignEnd="@+id/texto"
+        android:onClick="traduzirFrances"/>
+
+</RelativeLayout>
